@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+html,
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+/*НАЧИНАЮ СТИЛИЗОВАТЬ ХЕДЕР */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 15px 0;
+}
+.header__auth{
+    margin-left: auto;
+}
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__title{
+    text-transform: uppercase;
+    line-height: 1.25em;
+    color: #000000;
+    font-weight: bold;
+    margin: 0 76px 0 5px;
+}
+p span{
+    display: block;
+}
+.search-form{
+    background: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
+    display: flex;
+    max-width: 620px;
+    flex-grow: 1;
+    position: relative;
+}
+.search-form__input{
+    background-color: transparent;
+    border: none;
+    padding: 13px 0 13px 20px;
+    width: 100%;
+}
+.search-form__button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 18px 0 18px;
+    cursor: pointer;
+}
+.header__login{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    background: #EBEBEB;
+    border-radius: 50px;
+    padding: 16px 30px;
+    color: #000000;
+}
+.header__cart{
+    width: 49px;
+    height: 49px;
+    background: #F66A15;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin-left: 30px;
+    position: relative;
+}
+.cart-notify{
+    background: #FFAF19;
+    font-size: 8px;
+    line-height: 9px;
+    color: #000000;
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*НАЧИНАЮ СТИЛИЗОВАТЬ МЕЙН */
+.main{
+    flex: 1 1 auto;
+}
