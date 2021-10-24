@@ -171,7 +171,7 @@ p span{
     display: inline-block;
 }
 .promo-summer{
-    background:url(/img/vegetables.jpg) no-repeat;
+    background:url(../img/vegetables.jpg) no-repeat;
     background-size:cover;
 }
 .main__basket{
@@ -183,11 +183,11 @@ p span{
     grid-template-rows: repeat(2, auto);
 }
 .basket__sweets{
-    background:url(/img/sweets.png) no-repeat;
+    background:url(../img/sweets.png) no-repeat;
     background-size: cover;
 }
 .basket__salad{
-    background:url(/img/salad.png) no-repeat;
+    background:url(../img/salad.png) no-repeat;
     background-size: cover;
 }
 .basket__item{
