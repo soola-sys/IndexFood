@@ -7,6 +7,12 @@
 a {
     text-decoration: none;
 }
+h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: #000000;
+}
 html,
 body{
     font-family: 'Roboto', sans-serif;
@@ -18,7 +24,7 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 1190px;
+    max-width: 1196px;
     margin: 0 auto;
 }
 .wrapper{
@@ -27,13 +33,12 @@ body{
     flex-direction: column;
     overflow: hidden;
     justify-content: space-between;
-    align-items: center;
 }
 /*НАЧИНАЮ СТИЛИЗОВАТЬ ХЕДЕР */
 .header {
     display: flex;
     align-items: center;
-    padding: 0 10px 15px 0;
+    padding: 0 15px 15px 15px;
 }
 .header__auth{
     margin-left: auto;
@@ -196,6 +201,20 @@ p span{
     align-items: flex-start;
     flex-direction: column;
     padding: 36px 0 0 32px;
+    position: relative;
+    overflow: hidden;
+}
+.basket__item::before{
+    content:'';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 40.45%, rgba(0, 0, 0, 0.3));
 }
 .basket__title{
     font-weight: 500;
@@ -226,3 +245,288 @@ p span{
     color: #5F5F61;
     background: #FFFFFF;
 }
+.delivery-week{
+    margin: 0 0 100px 0;
+}
+.delivery-week__title{
+    margin: 0 0 47px 0; 
+}
+.delivery-week__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px 30px; 
+}
+.delivery-week__item{
+  width:275px;
+  height: 182px;
+  border-radius:18px;
+  position: relative;
+  overflow: hidden;
+}
+.delivery-week__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.delivery-week__badge{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+}
+._health{
+    background: #D0FD89;
+}
+._vegetables{
+    color: #FFFFFF;
+    background: #AEBC41;
+}
+._meat{
+   background: #B86B78; 
+   color: #FFFFFF;
+}
+._bird{
+    background: #D68334;
+   color: #FFFFFF;
+}
+._fish{
+    background: #CD6255;
+   color: #FFFFFF;
+}
+._forkids{
+    background: #FFFDBF;
+}
+._forparents{
+    background: #F6FDC8;
+}
+._holiday{
+    background: #FEF7FE;
+}
+/* <--CATEGORY FOOD  --> */
+.category-food{
+background: #F6F6F6;
+width: 100%;
+}
+.category-food__options{
+    margin: 50px 0 62px 0;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+.options__item:not(:last-child){
+    margin-right: 58px;
+}
+.options__input{
+    display: none;
+}
+.options__input:checked + label{
+    color: #F37321;
+}
+.options__label{
+    color: #49494F;
+    user-select: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+/* <--CATEGORY FOOD-CARD --> */
+.category-food{
+    margin-bottom: 119px;
+}
+.category-food__title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    padding-top: 40px;
+ 
+}
+
+.card__image img{
+    border-radius: 20px 20px 0px 0px;
+}
+.category-food__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+    margin-bottom: 62px;
+}
+.card__item{
+    background:#ffff;
+    max-width: 270px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+.card__description{
+    padding: 0 27px 0 23px;
+}
+.card__info{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 24px 21px 23px;
+}
+.card__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.card__subtitle{
+    margin:  13px 0 36px 0;
+    text-overflow: ellipsis;
+    max-width: 220px;
+    color: #B9B9BE;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+.card__price span{
+    font-weight: 500;
+    font-size: 23px;
+    color: #4B4B51;
+}
+.card__price  {
+    color: #AAAAB1;
+}
+.card__button{
+    font-weight:600;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 25px;
+    background: #fff;
+    height: 50px;
+}
+.button_orange:hover{
+    background: #FFA871;
+    color: #FFFFFF;
+    border: none;
+}
+.button_orange{
+    color: #F37321;
+    border: 2px solid #F37321;
+    background: #fff;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 33px;
+    cursor: pointer;
+}
+.delivery-week__button-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 41px 0;
+}
+.delivery-week__button{
+    font-weight:600;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 315px;
+    width:100%;
+    background: #fff;
+    height: 50px;
+}
+/* <--BENEFIT CARDS START --> */
+.benefits{
+   margin-bottom: 173px;
+}
+.benefits__wrapper{
+    display: flex;
+    gap: 37px;
+    flex-wrap: wrap;
+}
+.benefits__title{
+    margin-bottom: 52px;
+}
+.benefits__item{
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    max-width: 270px;
+    text-align: center;
+    padding-top: 124px;
+}
+.benefits-box{
+    background:url(/img/Group.png) no-repeat;
+    background-position: top 30px left 105px;
+}
+.benefits-product{
+    background:url(/img/prod.png) no-repeat;
+    background-position: top 30px left 105px;
+}
+.benefits-quality{
+    background:url(/img/qual.png) no-repeat;
+    background-position: top 30px left 105px;
+}
+.benefits-delivery{
+    background:url(/img/del.png) no-repeat;
+    background-position: top 30px left 105px;
+}
+.benefits-card__title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 0 52px;
+}
+.benefits-card__subtitle{
+    margin: 13px 0 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #49494F;
+    padding:  0 25px 25px 25px;
+}
+/* <--BENEFIT CARDS END --> */
+
+/* <--FOOTER START --> */
+.footer__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer__title{
+    margin-left: 11px;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.footer__inner{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+.nav__list{
+    display: flex;
+    text-decoration: underline;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 23px;
+}
+.nav__item:not(last-child){
+  margin-right: 50px;
+}
+.social__wrap .social__link:not(last-child) {
+    margin-right: 20px;
+}
+.social__link{
+    display: inline-flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    background: #C4C4C4;
+    text-align: center;
+    padding: 6px 8px;
+    border-radius: 20px;
+}
+/* <--FOOTER END --> */

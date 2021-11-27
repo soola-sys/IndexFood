@@ -1,95 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Индекс Еда</title>
-</head>
-<body>
-<div class="wrapper">
-    <header class="header header-container container">
-            <div class="header__logo">
-                <a href="#"><img src="img/logo.png" alt="Logo" width="58" height="58"></a>
-                <p class="header__title">Индекс <span>Eда</span></p>
-            </div>
-            <form action="#" class="header__search search-form">
-            <input type="text" class="search-form__input" placeholder="Блюда" name="search" type="search" >
-            <button class="search-form__button"> 
-            <img src="img/search-icon.svg" alt="SearchIcon">
-            </button>
-            </form>
-            <div class="header__auth">
-                <a href="#" class="header__login">Войти</a>
-            </div>
-            <a href="#" class="header__cart">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_5:2)">
-                    <path d="M22.713 4.077C22.4317 3.73944 22.0796 3.46795 21.6815 3.28182C21.2835 3.09568 20.8494 2.99946 20.41 3H4.242L4.2 2.649C4.11405 1.91942 3.76338 1.24673 3.21449 0.758478C2.6656 0.270223 1.95663 0.000341793 1.222 0L1 0C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H1.222C1.46693 2.00003 1.70334 2.08996 1.88637 2.25272C2.06941 2.41547 2.18634 2.63975 2.215 2.883L3.591 14.583C3.73385 15.7998 4.31848 16.9218 5.23391 17.736C6.14934 18.5502 7.33185 19 8.557 19H19C19.2652 19 19.5196 18.8946 19.7071 18.7071C19.8946 18.5196 20 18.2652 20 18C20 17.7348 19.8946 17.4804 19.7071 17.2929C19.5196 17.1054 19.2652 17 19 17H8.557C7.93806 16.9983 7.3348 16.8051 6.82994 16.4471C6.32507 16.089 5.94331 15.5835 5.737 15H17.657C18.8293 15.0001 19.9643 14.5882 20.8638 13.8364C21.7633 13.0846 22.37 12.0407 22.578 10.887L23.363 6.533C23.4414 6.10101 23.4237 5.65707 23.3114 5.23264C23.1991 4.80821 22.9948 4.41368 22.713 4.077V4.077ZM21.4 6.178L20.614 10.532C20.4891 11.225 20.1245 11.852 19.5839 12.3032C19.0433 12.7544 18.3612 13.0011 17.657 13H5.419L4.478 5H20.41C20.5569 4.99912 20.7022 5.03062 20.8355 5.09226C20.9689 5.15389 21.087 5.24415 21.1815 5.35661C21.276 5.46907 21.3446 5.60097 21.3824 5.74294C21.4201 5.8849 21.4262 6.03344 21.4 6.178V6.178Z" fill="white"/>
-                    <path d="M7.00012 24.0006C8.10469 24.0006 9.00011 23.1052 9.00011 22.0006C9.00011 20.8961 8.10469 20.0006 7.00012 20.0006C5.89555 20.0006 5.00012 20.8961 5.00012 22.0006C5.00012 23.1052 5.89555 24.0006 7.00012 24.0006Z" fill="white"/>
-                    <path d="M17 24.0006C18.1046 24.0006 19 23.1052 19 22.0006C19 20.8961 18.1046 20.0006 17 20.0006C15.8954 20.0006 15 20.8961 15 22.0006C15 23.1052 15.8954 24.0006 17 24.0006Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_5:2">
-                    <rect width="24" height="24" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg> 
-                <span class="cart-notify">12</span>                    
-            </a>
-    </header>
-    <main class="main main-container container">
-        <section class="main__slider">
-                <div class="main__promo promo main-light promo-summer">
-                    <div class="main__slide-content">
-                        <h1 class="promo__title">Неделя летних 
-                            овощей</h1>
-                          <p class="promo__subtitle">Специальная овощная корзина. Новые продукты,
-                            специальные цены, скидки!</p>
-                          <div class="promo__item">
-                            <a class="promo__link link promo__link__orange">Заказать со скидкой</a>
-                          </div>  
-                    </div>
-                </div>
-        </section>
-        <div class="main__basket basket">
-              <div class="basket__item basket__sweets main-light">
-                  <div class="basket__header">
-                    <h1 class="basket__title">
-                        Сладкая корзина
-                    </h1>
-                    <p class="basket__subtitle">Произвольный выбор
-                        десертов по Вашему
-                        желанию.</p>
-                  </div>
-                  <div class="basket__footer">
-                    <p class="basket__price">ОТ 1 300 ₽</p>
-                    <p class="basket__delivery">стоимость доставки до 200 ₽</p>
-                    <a href="#" class="basket__link link basket__link_white">Собрать корзину</a>
-                  </div>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-container container">
+        <div class="header__logo">
+          <a href="#"
+            ><img src="img/logo.png" alt="Logo" width="58" height="58"
+          /></a>
+          <p class="header__title">Индекс <span>Eда</span></p>
+        </div>
+        <form action="#" class="header__search search-form">
+          <input
+            type="text"
+            class="search-form__input"
+            placeholder="Блюда"
+            name="search"
+            type="search"
+          />
+          <button class="search-form__button">
+            <img src="img/search-icon.svg" alt="SearchIcon" />
+          </button>
+        </form>
+        <div class="header__auth">
+          <a href="#" class="header__login">Войти</a>
+        </div>
+        <a href="#" class="header__cart">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_5:2)">
+              <path
+                d="M22.713 4.077C22.4317 3.73944 22.0796 3.46795 21.6815 3.28182C21.2835 3.09568 20.8494 2.99946 20.41 3H4.242L4.2 2.649C4.11405 1.91942 3.76338 1.24673 3.21449 0.758478C2.6656 0.270223 1.95663 0.000341793 1.222 0L1 0C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H1.222C1.46693 2.00003 1.70334 2.08996 1.88637 2.25272C2.06941 2.41547 2.18634 2.63975 2.215 2.883L3.591 14.583C3.73385 15.7998 4.31848 16.9218 5.23391 17.736C6.14934 18.5502 7.33185 19 8.557 19H19C19.2652 19 19.5196 18.8946 19.7071 18.7071C19.8946 18.5196 20 18.2652 20 18C20 17.7348 19.8946 17.4804 19.7071 17.2929C19.5196 17.1054 19.2652 17 19 17H8.557C7.93806 16.9983 7.3348 16.8051 6.82994 16.4471C6.32507 16.089 5.94331 15.5835 5.737 15H17.657C18.8293 15.0001 19.9643 14.5882 20.8638 13.8364C21.7633 13.0846 22.37 12.0407 22.578 10.887L23.363 6.533C23.4414 6.10101 23.4237 5.65707 23.3114 5.23264C23.1991 4.80821 22.9948 4.41368 22.713 4.077V4.077ZM21.4 6.178L20.614 10.532C20.4891 11.225 20.1245 11.852 19.5839 12.3032C19.0433 12.7544 18.3612 13.0011 17.657 13H5.419L4.478 5H20.41C20.5569 4.99912 20.7022 5.03062 20.8355 5.09226C20.9689 5.15389 21.087 5.24415 21.1815 5.35661C21.276 5.46907 21.3446 5.60097 21.3824 5.74294C21.4201 5.8849 21.4262 6.03344 21.4 6.178V6.178Z"
+                fill="white"
+              />
+              <path
+                d="M7.00012 24.0006C8.10469 24.0006 9.00011 23.1052 9.00011 22.0006C9.00011 20.8961 8.10469 20.0006 7.00012 20.0006C5.89555 20.0006 5.00012 20.8961 5.00012 22.0006C5.00012 23.1052 5.89555 24.0006 7.00012 24.0006Z"
+                fill="white"
+              />
+              <path
+                d="M17 24.0006C18.1046 24.0006 19 23.1052 19 22.0006C19 20.8961 18.1046 20.0006 17 20.0006C15.8954 20.0006 15 20.8961 15 22.0006C15 23.1052 15.8954 24.0006 17 24.0006Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_5:2">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="cart-notify">12</span>
+        </a>
+      </header>
+      <main class="main">
+        <section class="main__slider container">
+          <div class="main__promo promo main-light promo-summer">
+            <div class="main__slide-content">
+              <h1 class="promo__title">Неделя летних овощей</h1>
+              <p class="promo__subtitle">
+                Специальная овощная корзина. Новые продукты, специальные цены,
+                скидки!
+              </p>
+              <div class="promo__item">
+                <a class="promo__link link promo__link__orange"
+                  >Заказать со скидкой</a
+                >
               </div>
-              <div class="basket__item basket__salad main-light">
-                <div class="basket__header">
-                  <h1 class="basket__title">
-                      Сладкая корзина
-                  </h1>
-                  <p class="basket__subtitle">Произвольный выбор
-                      десертов по Вашему
-                      желанию.</p>
-                </div>
-                <div class="basket__footer">
-                  <p class="basket__price">ОТ 700 ₽</p>
-                  <p class="basket__delivery">стоимость доставки до 200 ₽</p>
-                  <a href="#" class="basket__link link basket__link_white">Собрать корзину</a>
-                </div>
             </div>
-        </div>    
-    </main>
-    <footer>
-        Я футер
-    </footer>
-</div>
-</body>
+          </div>
+        </section>
+        <div class="container">
+          <div class="main__basket basket">
+            <div class="basket__item basket__sweets main-light">
+              <div class="basket__header">
+                <h1 class="basket__title">Сладкая корзина</h1>
+                <p class="basket__subtitle">
+                  Произвольный выбор десертов по Вашему желанию.
+                </p>
+              </div>
+              <div class="basket__footer">
+                <p class="basket__price">ОТ 1 300 ₽</p>
+                <p class="basket__delivery">стоимость доставки до 200 ₽</p>
+                <a href="#" class="basket__link link basket__link_white"
+                  >Собрать корзину</a
+                >
+              </div>
+            </div>
+            <div class="basket__item basket__salad main-light">
+              <div class="basket__header">
+                <h1 class="basket__title">Сладкая корзина</h1>
+                <p class="basket__subtitle">
+                  Произвольный выбор десертов по Вашему желанию.
+                </p>
+              </div>
+              <div class="basket__footer">
+                <p class="basket__price">ОТ 700 ₽</p>
+                <p class="basket__delivery">стоимость доставки до 200 ₽</p>
+                <a href="#" class="basket__link link basket__link_white"
+                  >Собрать корзину</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="delivery-week">
+            <h2 class="delivery-week__title">Доставка готовой еды на неделю</h2>
+            <div class="delivery-week__cards">
+              <div class="delivery-week__item">
+                <img
+                  src="/img/zosh.png"
+                  class="delivery-week__image"
+                  alt="ЗОЖ"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _health">ЗОЖ</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/ovoshnoe.png"
+                  class="delivery-week__image"
+                  alt="Овощное"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _vegetables">Овощное</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/myasnoe.png"
+                  class="delivery-week__image"
+                  alt="Мясное"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _meat">Мясное</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/bird.png"
+                  class="delivery-week__image"
+                  alt="Птица"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _bird">Птица</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/fish.png"
+                  class="delivery-week__image"
+                  alt="Рыбное"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _fish">Рыбное</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/forChild.png"
+                  class="delivery-week__image"
+                  alt="Детское"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _forkids">Детское</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/parents.png"
+                  class="delivery-week__image"
+                  alt="Родителям"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _forparents">Родителям</span>
+              </div>
+              <div class="delivery-week__item">
+                <img
+                  src="/img/holiday.png"
+                  class="delivery-week__image"
+                  alt="Праздничное"
+                  width="275"
+                  height="182"
+                />
+                <span class="delivery-week__badge _holiday">Праздничное</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="category-food">
+          <div class="category-food container">
+            <h2 class="category-food__title">Категории блюд</h2>
+            <div class="category-food__options options">
+              <div class="options__item">
+                <input
+                  class="options__input"
+                  id="radio-1"
+                  type="radio"
+                  name="radio"
+                  checked
+                />
+                <label class="options__label" for="radio-1"
+                  >Популярные блюда</label
+                >
+              </div>
+              <div class="options__item">
+                <input
+                  class="options__input"
+                  id="radio-2"
+                  type="radio"
+                  name="radio"
+                />
+                <label class="options__label" for="radio-2">Овощное</label>
+              </div>
+              <div class="options__item">
+                <input
+                  class="options__input"
+                  id="radio-3"
+                  type="radio"
+                  name="radio"
+                />
+                <label class="options__label" for="radio-3">Мясное</label>
+              </div>
+            </div>
+            <div class="category-food__card card">
+              <div class="card__item">
+                <div class="card__image">
+                  <img
+                    src="/img/teriyaki.png"
+                    alt="Chicken"
+                    width="270"
+                    height="192"
+                  />
+                </div>
+                <div class="card__description">
+                  <h3 class="card__title">Куриные крылья под соусом Терияки</h3>
+                  <p class="card__subtitle">
+                    Соус Терияки придумали повора из Японии. По традиции его
+                    используют в качестве маринада для Соус Терияки придумали
+                    повора из Японии. По традиции его используют в качестве
+                    маринада для...
+                  </p>
+                </div>
+                <div class="card__info">
+                  <p class="card__price"><span>260 ₽</span>500 гр</p>
+                  <button class="button card__button button_orange">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__image">
+                  <img
+                    src="/img/teriyaki.png"
+                    alt="Chicken"
+                    width="270"
+                    height="192"
+                  />
+                </div>
+                <div class="card__description">
+                  <h3 class="card__title">Куриные крылья под соусом Терияки</h3>
+                  <p class="card__subtitle">
+                    Соус Терияки придумали повора из Японии. По традиции его
+                    используют в качестве маринада для Соус Терияки придумали
+                    повора из Японии. По традиции его используют в качестве
+                    маринада для...
+                  </p>
+                </div>
+                <div class="card__info">
+                  <p class="card__price"><span>260 ₽</span>500 гр</p>
+                  <button class="button card__button button_orange">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__image">
+                  <img
+                    src="/img/teriyaki.png"
+                    alt="Chicken"
+                    width="270"
+                    height="192"
+                  />
+                </div>
+                <div class="card__description">
+                  <h3 class="card__title">Куриные крылья под соусом Терияки</h3>
+                  <p class="card__subtitle">
+                    Соус Терияки придумали повора из Японии. По традиции его
+                    используют в качестве маринада для Соус Терияки придумали
+                    повора из Японии. По традиции его используют в качестве
+                    маринада для...
+                  </p>
+                </div>
+                <div class="card__info">
+                  <p class="card__price"><span>260 ₽</span>500 гр</p>
+                  <button class="button card__button button_orange">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__image">
+                  <img
+                    src="/img/teriyaki.png"
+                    alt="Chicken"
+                    width="270"
+                    height="192"
+                  />
+                </div>
+                <div class="card__description">
+                  <h3 class="card__title">Куриные крылья под соусом Терияки</h3>
+                  <p class="card__subtitle">
+                    Соус Терияки придумали повора из Японии. По традиции его
+                    используют в качестве маринада для Соус Терияки придумали
+                    повора из Японии. По традиции его используют в качестве
+                    маринада для...
+                  </p>
+                </div>
+                <div class="card__info">
+                  <p class="card__price"><span>260 ₽</span>500 гр</p>
+                  <button class="button card__button button_orange">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="delivery-week__button-wrap">
+              <button class="button delivery-week__button button_orange">
+                Больше блюд
+              </button>
+            </div>
+          </div>
+        </section>
+        <div class="benefits container">
+          <h2 class="benefits__title">Наши преимущества</h2>
+          <div class="benefits__wrapper">
+            <div class="benefits__item benefits-box">
+              <h3 class="benefits-card__title">Какой путь проходит ваша еда</h3>
+              <p class="benefits-card__subtitle">
+                Вы делаете заказ на коробку с недельным запасом полуфабрикатов и
+                готовых блюд для всей семьи
+              </p>
+            </div>
+            <div class="benefits__item benefits-product">
+              <h3 class="benefits-card__title">Как происходит производство</h3>
+              <p class="benefits-card__subtitle">
+                За день до доставки мы сами готовим блюда из натуральных
+                продуктов без консервантов, красителей и гмо
+              </p>
+            </div>
+            <div class="benefits__item benefits-quality">
+              <h3 class="benefits-card__title">Высокие стандарты качества</h3>
+              <p class="benefits-card__subtitle">
+                Наши повара с многолетним опытом с любовью готовят каждую порцию
+                блюда
+              </p>
+            </div>
+            <div class="benefits__item benefits-delivery">
+              <h3 class="benefits-card__title">
+                Быстрая и качественная доставка
+              </h3>
+              <p class="benefits-card__subtitle">
+                Сами доставим всё прямов в вашу морозилку, сохранив
+                температурный режим и качество наших блюд
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-container container">
+          <div class="footer__inner">
+            <div class="footer__logo">
+              <a href="#"
+                ><img
+                  src="/img/footerLogo.png"
+                  alt="Logo"
+                  width="101"
+                  height="101"
+              /></a>
+              <p class="footer__title">Индекс<span>Eда</span></p>
+            </div>
+            <div class="footer__info">
+              <nav class="footer__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"></a>Доставка и оплата
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"></a>Напишите нам
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__social social">
+              <div class="social__wrap">
+                <a href="#" class="social__link"
+                  ><img
+                    src="/img/telega.svg"
+                    alt="Telegram"
+                    width="18"
+                    height="18"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img
+                    src="/img/vk.svg"
+                    alt="Vkontakte"
+                    width="18"
+                    height="18"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img
+                    src="/img/instagram.svg"
+                    alt="instagram"
+                    width="18"
+                    height="18"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
