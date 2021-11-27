@@ -457,19 +457,19 @@ width: 100%;
     padding-top: 124px;
 }
 .benefits-box{
-    background:url(../img/Group.png) no-repeat;
+    background:url(/img/Group.png) no-repeat;
     background-position: top 30px left 105px;
 }
 .benefits-product{
-    background:url(../img/prod.png) no-repeat;
+    background:url(/img/prod.png) no-repeat;
     background-position: top 30px left 105px;
 }
 .benefits-quality{
-    background:url(../img/qual.png) no-repeat;
+    background:url(/img/qual.png) no-repeat;
     background-position: top 30px left 105px;
 }
 .benefits-delivery{
-    background:url(../img/del.png) no-repeat;
+    background:url(/img/del.png) no-repeat;
     background-position: top 30px left 105px;
 }
 .benefits-card__title{
